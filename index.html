@@ -1,0 +1,137 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>Bank Card Project</title>
+        <meta charset="Utf-8" name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1"/>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card_cover">
+                    <div class="front_card bg">
+                        <div class="cardHeader">
+                            <img src="./img/chip.png" alt="chip">
+                            <img class="brand front_brand" style="max-width: 100%;" src="./img/visa.png" alt="brand">
+                        </div>
+                        <label for="cardNumber" class="cardNumber">
+                            <ul>
+                                <li>
+                                    <span class="binNumber">#</span>
+                                    <span class="binNumber">#</span>
+                                    <span>#</span>
+                                    <span>#</span>
+                                </li>
+                                <li>
+                                    <span>#</span>
+                                    <span>#</span>
+                                    <span>#</span>
+                                    <span>#</span>
+                                </li>
+                                <li>
+                                    <span>#</span>
+                                    <span>#</span>
+                                    <span>#</span>
+                                    <span>#</span>
+                                </li>
+                                <li>
+                                    <span>#</span>
+                                    <span>#</span>
+                                    <span>#</span>
+                                    <span>#</span>
+                                </li>
+                            </ul>
+                        </label>
+                        <div class="cardContent">
+                            <label for="cardName" class="cardName">
+                                <h3>Card Holder</h3>
+                                <div class="holderName">Full Name</div>
+                            </label>
+                            <div class="card_date">
+                                <label for="card_month">
+                                    <h3>Expires</h3>
+                                </label>
+                                <label for="card_month">
+                                    <span id="month">MM</span>
+                                </label>
+                                <span>/</span>
+                                <label for="card_year">
+                                    <span id="year">YY</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back_card bg">
+                        <div class="band"></div>
+                        <div class="cvv">
+                            <p class="cvv_title">CVV</p>
+                            <input type="text">
+                        </div>
+                        <div class="back_brand">
+                            <img class="brand" src="./img/visa.png" alt="brand">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_form">
+                <form action="#">
+                    <label for="cardNumber" class="numberInput">
+                        <h3>Card Number</h3>
+                        <input type="text" id="cardNumber_input" class="form_inputs" maxlength="16" name="cardNumber">
+                    </label>
+                    <label for="cardName" class="nameInput">
+                        <h3>Card Holders</h3>
+                        <input type="text" id="cardName_input" autocomplete="off" class="form_inputs" name="cardName" maxlength="20">
+                    </label>
+                    <div class="date_form">
+                        <div class="expiration_form">
+                            <h3>Expiration Date</h3>
+                            <div>
+                                <label for="card_month">
+                                    <select name="card_month" class="form_inputs" id="card_month">
+                                        <option disabled selected> Month </option>
+                                        <option value="01"> 01 </option>
+                                        <option value="02"> 02 </option>
+                                        <option value="03"> 03 </option>
+                                        <option value="04"> 04 </option>
+                                        <option value="05"> 05 </option>
+                                        <option value="06"> 06 </option>
+                                        <option value="07"> 07 </option>
+                                        <option value="08"> 08 </option>
+                                        <option value="09"> 09 </option>
+                                        <option value="10"> 10 </option>
+                                        <option value="11"> 11 </option>
+                                        <option value="12"> 12 </option>
+                                    </select>
+                                </label>
+                                <label for="card_year">
+                                    <select name="card_year" class="form_inputs" id="card_year">
+                                        <option value="23" disabled selected> 2023 </option>
+                                        <option value="24"> 2024 </option>
+                                        <option value="25"> 2025 </option>
+                                        <option value="26"> 2026 </option>
+                                        <option value="27"> 2027 </option>
+                                        <option value="28"> 2028 </option>
+                                        <option value="29"> 2029 </option>
+                                        <option value="30"> 2030 </option>
+                                        <option value="31"> 2031 </option>
+                                        <option value="32"> 2032 </option>
+                                        <option value="33"> 2033 </option>
+                                        <option value="34"> 2034 </option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <label for="cvv_form" class="cvv_form">
+                            <h3>CVV</h3>
+                            <input class="cvvInput" type="text" maxlength="4" minlength="4">
+                        </label>
+                    </div>
+                    <input type="button" id="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
