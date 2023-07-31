@@ -56,22 +56,26 @@ function focus_in_out(x, y, width, height) {
     root.style.setProperty('--y', y);
     root.style.setProperty('--width', width);
     root.style.setProperty('--height', height);
+    console.log(x, y);
 }
 
 numberInput.addEventListener('focusin', () =>{
-    if(window.innerWidth > 800) focus_in_out('4%', '44%', '90%', '20%');
+    if(window.innerWidth > 992) focus_in_out('4%', '43%', '90%', '20%');
+    else if(window.innerWidth > 800) focus_in_out('4%', '44%', '90%', '20%');
     else if(window.innerWidth > 600) focus_in_out('4%', '48%', '90%', '20%');
     else if(window.innerWidth > 360) focus_in_out('5%', '42%', '90%', '20%');
     else focus_in_out('5%', '47%', '90%', '20%')
 });
 nameInput.addEventListener('focusin', () => {
-    if(window.innerWidth > 800)  focus_in_out('4%', '75%', '67%', '20%');
+    if(window.innerWidth > 992) focus_in_out('4%', '69%', '67%', '20%');
+    else if(window.innerWidth > 800)  focus_in_out('4%', '75%', '67%', '20%');
     else if(window.innerWidth > 600) focus_in_out('4%', '74%', '65%', '20%');
     else if(window.innerWidth > 350) focus_in_out('5%', '70%', '60%', '22%');
     else focus_in_out('5%', '72%', '52%', '21%')
 });
 cardDate.addEventListener('focusin', () => {
-    if(window.innerWidth > 800) focus_in_out('72%', '75%', '25%', '20%');
+    if(window.innerWidth > 992) focus_in_out('73%', '69%', '24%', '20%');
+    else if(window.innerWidth > 800) focus_in_out('72%', '75%', '25%', '20%');
     else if(window.innerWidth > 600) focus_in_out('71%', '74%', '25%', '20%');
     else if(window.innerWidth > 350) focus_in_out('65%', '70%', '30%', '22%');
     else focus_in_out('58%', '72%', '30%', '21%')
