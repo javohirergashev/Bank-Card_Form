@@ -56,7 +56,6 @@ function focus_in_out(x, y, width, height) {
     root.style.setProperty('--y', y);
     root.style.setProperty('--width', width);
     root.style.setProperty('--height', height);
-    console.log(x, y);
 }
 
 numberInput.addEventListener('focusin', () =>{
